@@ -1,11 +1,14 @@
+/* ====== 상단 코인 가격 슬라이드======== */
 .price__container {
     margin-top: 15px;
 }
 
+/* ======로그인 밑 코인 링크 이미지======== */
 .bodyimg__container {
     margin-top: 40px;
 }
 
+/* ======HOME MAIN======== */
 .home__container {
     padding-top: 15px;
 }
@@ -15,6 +18,8 @@
     padding-bottom: 50px;
 }
 
+
+/* 탭 바 메뉴 */
 .home-label {
     padding-bottom: 15px;
 }
@@ -38,6 +43,7 @@
     font-size: 18px;
 }
 
+/* 탭 화면 */
 .home-divs {
     padding: 10px 0 20px 0;
 }
@@ -50,6 +56,7 @@
     display: block;
 }
 
+/* 공지사항 탭 */
 .announce-article {
     display: grid;
     grid-template-columns: 1fr 7fr 1fr 1fr;
@@ -69,10 +76,26 @@
     color: var(--color-primary);
 }
 
+
+/* 하단 광고 이미지 */
 .home-bottom-img {
     margin-top: 25px;
 }
 
+
+/* 오른쪽 섹션 - 공통 */
+.section-inner {
+    padding: 20px;
+}
+
+.inner-body {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 10px;
+    padding-top: 15px;
+}
+
+/* 오른쪽 섹션 - 커뮤니티 */
 .community-section {
     padding: 20px;
     margin-bottom: 25px;
@@ -95,21 +118,11 @@
     font-size: 25px;
 }
 
-.section-inner {
-    padding: 20px;
-}
-
 .section-inner:first-child {
     border-bottom: 1px solid var(--color-gray20);
 }
 
-.inner-body {
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    gap: 10px;
-    padding-top: 15px;
-}
-
+/* 오른쪽 섹션 - 캘린더 */
 .calendar-item {
     margin-bottom: 10px;
 }
