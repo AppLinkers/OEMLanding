@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OEM</title>
+    <title>OM</title>
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +17,13 @@
     <!-- ICON SCOUT -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
     <!-- STYLE SHEET -->
     <link rel="stylesheet" href="../../css/common/style.css">
     <link rel="stylesheet" href="../../css/home/home.css">
+    <link rel="stylesheet" href="../../css/common/banner.css">
 </head>
 
 <body>
@@ -33,7 +37,17 @@
     </div>
 
     <!-- ======== BANNER ======== -->
-    <div id="banner"></div>
+    <div class="container banner__container">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide flex-center">Slide 1</div>
+                <div class="swiper-slide flex-center">Slide 2</div>
+                <div class="swiper-slide flex-center">Slide 3</div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
 
     <!-- ======== BODY_IMG ======== -->
     <div class="container bodyimg__container">
@@ -151,6 +165,30 @@
     <!-- ======== JAVASCRIPT ======== -->
     <script src="../../javascript/common/base.js"></script>
     <script src="../../javascript/home/home.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
 </body>
 
 </html>

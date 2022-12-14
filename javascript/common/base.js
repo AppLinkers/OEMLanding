@@ -8,5 +8,4 @@ async function importPage(targetDiv, page) {
 
 importPage('header', "../common/header.html");
 importPage('nav', "../common/nav.html");
-importPage('banner', "../common/banner.html");
 importPage('footer', "../common/footer.html");
