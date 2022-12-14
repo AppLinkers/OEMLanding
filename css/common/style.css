@@ -11,6 +11,8 @@
     --color-gray20: #d9d9d9;
     --color-gray10: #f7f7f7;
 
+    --color-discord: #595FFA;
+
     --transition: all 300ms ease;
 
     --container-width: 1160px;
@@ -25,6 +27,7 @@
     --font-etc: 12px;
 
     --logo-size: 3rem;
+    --icon-size: 50px;
 
     --grid-rate: 2fr 1fr;
     --grid-gap: 2rem;
