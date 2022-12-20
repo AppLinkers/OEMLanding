@@ -22,7 +22,6 @@
 
     <!-- STYLE SHEET -->
     <link rel="stylesheet" href="../../css/common/style.css">
-    <link rel="stylesheet" href="../../css/announce/announce.css">
     <link rel="stylesheet" href="../../css/common/banner.css">
 </head>
 
@@ -31,6 +30,11 @@
     <header id="header"></header>
     <!-- ======== NAV ======== -->
     <nav id="nav"></nav>
+    <style>
+        nav a:nth-child(1) {
+            color: var(--color-black);
+        }
+    </style>
     <!-- ======== BANNER ======== -->
     <div class="container-fit banner__container">
         <!-- Swiper -->
@@ -47,10 +51,10 @@
 
 
     <!-- ======== ANNOUNCE ======== -->
-    <div class="container announce__container">
+    <div class="container basic__container">
 
         <div class="header-label flex-between">
-            <p class="p-section">공지사항</p>
+            <a class="a-section" href="../announce/announce.html">공지사항</a>
             <div class="label-right flex-left">
                 <i class="uil uil-estate" style="margin-right: 5px;"></i>
                 <p>홈 > biget > 공지사항</p>
@@ -60,9 +64,8 @@
         <div class="article-list">
 
             <article class="article-form" th:each="">
-                <a href="#">
+                <a href="../announce/announce_detail.html">
                     <div class="article-inner">
-
                         <div class="article-img">
                             <img src="../../images/guide-temp.jpg">
                         </div>

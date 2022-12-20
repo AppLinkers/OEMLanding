@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OM</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- ICON SCOUT -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- STYLE SHEET -->
+    <link rel="stylesheet" href="../../css/common/style.css">
+    <link rel="stylesheet" href="../../css/common/banner.css">
+</head>
+
+<body>
+    <!-- ======== HEADER ======== -->
+    <header id="header"></header>
+    <!-- ======== NAV ======== -->
+    <nav id="nav"></nav>
+    <style>
+        nav a:nth-child(1) {
+            color: var(--color-black);
+        }
+    </style>
+    <!-- ======== BANNER ======== -->
+    <div class="container-fit banner__container">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
+                <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
+                <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+
+    <!-- ======== ANNOUNCE DETAIL ======== -->
+    <div class="container basic__container">
+        <div class="header-label flex-between">
+            <a class="a-section" href="../announce/announce.html">공지사항</a>
+            <div class="label-right flex-left">
+                <i class="uil uil-estate" style="margin-right: 5px;"></i>
+                <p>홈 > biget > 공지사항</p>
+            </div>
+        </div>
+
+        <div class="detail-title">
+            <p class="p-menu">Bitget 신규코인 상장: AAVE</p>
+        </div>
+
+        <div class="detail-label flex-between">
+            <div class="flex-left">
+                <p class="p-title" style="margin-right: 25px; color: var(--color-black);">비트겟 코리아</p>
+                <i class="uil uil-eye" style="margin-right: 5px;"></i>
+                <p>244</p>
+            </div>
+
+            <div class="flex-left">
+                <i class="uil uil-clock" style="margin-right: 5px;"></i>
+                <p>22.12.20</p>
+            </div>
+        </div>
+
+        <div class="detail-img flex-center">
+            <img src="../../images/guide-temp.jpg" alt="">
+        </div>
+
+        <p class="p-section">
+            Bitget 한국 유저들에게：
+            <br /><br />
+            Bitget이 신규코인 AAVE를 상장했습니다. 자산 페이지에서 AAVE를 직접 입금 및 출금 할 수 있습니다. 구체적인 시간은 다음과 같습니다.
+            <br /><br /><br />
+
+
+            1. AAVE 입출금 시간
+            <br /><br />
+            2021년 4월 23일 (싱가포르 시간)
+            <br /><br />
+            2.AAVE/USDT 거래 시간
+            <br /><br />
+            2021년 4월 23일 (싱가포르 시간)
+            <br /><br />
+            PC 또는 APP에서 경험하고 사용하는 것을 환영합니다. Bitget을 지원 해주셔서 감사합니다!
+            <br /><br />
+            AAVE 세부정보
+            <br /><br /><br />
+
+
+            Bitget팀
+            <br /><br />
+            2021년 4월 23일
+            <br /><br /><br />
+
+
+            【연락처】
+            <br /><br />
+            공식 웹사이트: www.bitget.com
+            <br /><br />
+            텔레그램 커뮤니티 : https://t.me/bitgetofficialkor
+            <br /><br />
+            공식 트위터 : https://twitter.com/BitgetKr
+            <br /><br />
+            고객센터 문의 메일: support@bitget.com
+            <br /><br />
+            비즈니스 메일: BD@bitget.com
+            <br /><br />
+            퀀트 거래: partnership@bitget.com
+        </p>
+
+    </div>
+
+    <!-- ======== FOOTER ======== -->
+    <footer id="footer"></footer>
+
+
+
+    <!-- ======== JAVASCRIPT ======== -->
+    <script src="../../javascript/common/base.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

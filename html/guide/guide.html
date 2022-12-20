@@ -22,7 +22,6 @@
 
     <!-- STYLE SHEET -->
     <link rel="stylesheet" href="../../css/common/style.css">
-    <link rel="stylesheet" href="../../css/guide/guide.css">
     <link rel="stylesheet" href="../../css/common/banner.css">
 </head>
 
@@ -31,6 +30,11 @@
     <header id="header"></header>
     <!-- ======== NAV ======== -->
     <nav id="nav"></nav>
+    <style>
+        nav a:nth-child(2) {
+            color: var(--color-black);
+        }
+    </style>
     <!-- ======== BANNER ======== -->
     <div class="container-fit banner__container">
         <!-- Swiper -->
@@ -46,10 +50,10 @@
     </div>
 
     <!-- ======== GUIDE ======== -->
-    <div class="container guide__container">
+    <div class="container basic__container">
 
         <div class="header-label flex-between">
-            <p class="p-section">가이드</p>
+            <a class="a-section" href="../guide/guide.html">가이드</a>
             <div class="label-right flex-left">
                 <i class="uil uil-estate" style="margin-right: 5px;"></i>
                 <p>홈 > biget > 가이드</p>
@@ -59,7 +63,7 @@
         <div class="article-list">
 
             <article class="article-form" th:each="">
-                <a href="#">
+                <a href="../guide/guide_detail.html">
                     <div class="article-inner">
 
                         <div class="article-img">

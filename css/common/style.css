@@ -84,6 +84,11 @@ p {
     font-size: var(--font-basic);
 }
 
+.p-menu {
+    font-size: var(--font-menu);
+    font-weight: 700;
+}
+
 .p-label {
     font-size: var(--font-label);
     font-weight: 700;
@@ -91,7 +96,6 @@ p {
 
 .p-section {
     font-size: var(--font-section);
-    font-weight: 700;
 }
 
 .p-title {
@@ -118,23 +122,21 @@ a {
 
 .a-section {
     font-size: var(--font-section);
+    font-weight: 700;
 }
 
 .a-label {
     font-size: var(--font-label);
     font-weight: 700;
-    cursor: pointer;
 }
 
 .a-title {
     font-size: var(--font-title);
     font-weight: 500;
-    cursor: pointer;
 }
 
 .a-content {
     font-size: var(--font-content);
-    cursor: pointer;
 }
 
 span {
@@ -154,6 +156,10 @@ span {
     width: var(--container-width);
     max-width: var(--container-width);
     margin: 0 auto;
+}
+
+.basic__container {
+    padding-top: 15px;
 }
 
 button {
@@ -317,8 +323,29 @@ section {
     border-bottom: 1px solid var(--color-gray20);
 }
 
+.header-label a:hover {
+    color: var(--color-primary);
+}
+
 .label-right {
     color: var(--color-gray);
+}
+
+/* 공지사항, 가이드 상세 */
+.detail-title {
+    padding: 40px 0 15px 0;
+}
+
+.detail-label {
+    padding: 10px 15px;
+    background: var(--color-gray10);
+    border-top: 1px solid var(--color-gray20);
+    border-bottom: 1px solid var(--color-gray20);
+    color: var(--color-gray);
+}
+
+.detail-img {
+    padding: 30px 0;
 }
 
 /*  커뮤니티 */
