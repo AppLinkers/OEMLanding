@@ -77,6 +77,45 @@
     color: var(--color-primary);
 }
 
+/* 가이드 탭 */
+.guide-article {
+    border-bottom: 1px solid var(--color-gray20);
+}
+
+.guide-article:last-child {
+    border: none;
+}
+
+.guide-article-inner {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px;
+}
+
+.guide-img {
+    width: 100%;
+    height: 100px;
+}
+
+.guide-content .a-section {
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+.guide-content .a-section:hover {
+    color: var(--color-primary);
+}
+
+.guide-content .a-basic {
+    color: var(--color-gray);
+    margin-bottom: 10px;
+}
+
+.guide-info p {
+    margin-right: 15px;
+}
+
 /* 오른쪽 섹션 - 커뮤니티 */
 .community-section {
     padding: 20px;
@@ -108,7 +147,7 @@
 @media screen and (max-width: 780px) {
 
     .announce-article {
-        grid-template-columns: 1fr 7fr;
+        grid-template-columns: 80px 7fr;
     }
 
     .announce-article .announce-writer {

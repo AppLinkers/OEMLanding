@@ -110,6 +110,10 @@ a {
     font-size: var(--font-menu);
 }
 
+.a-section {
+    font-size: var(--font-section);
+}
+
 .a-label {
     font-size: var(--font-label);
     font-weight: 700;
@@ -135,6 +139,12 @@ span {
 /* =================WIDGET CSS================ */
 
 .container {
+    width: var(--container-width);
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.container-fit {
     width: var(--container-width);
     max-width: var(--container-width);
     margin: 0 auto;
@@ -240,11 +250,31 @@ section {
     border-radius: var(--border-radius);
 }
 
+.ellipsis-line-one {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.ellipsis-line-three {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
 
 /* =================MEDIA QUERY================ */
 @media screen and (max-width: 780px) {
     .container {
         width: var(--container-width-phone);
+    }
+
+    .container-fit {
+        width: 100%;
     }
 
     .grid-div {
