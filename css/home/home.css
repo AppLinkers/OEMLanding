@@ -96,31 +96,7 @@
     margin-right: 15px;
 }
 
-/* 오른쪽 섹션 - 커뮤니티 */
-.community-section {
-    padding: 20px;
-    margin-bottom: 25px;
-}
 
-.community-icons {
-    padding: 30px 0 10px 0;
-}
-
-.community-icons img {
-    width: var(--icon-size);
-    height: var(--icon-size);
-}
-
-.community-icon {
-    width: var(--icon-size);
-    height: var(--icon-size);
-    border-radius: 50%;
-}
-
-.community-icon img {
-    width: 25px;
-    height: 25px;
-}
 
 
 /* =================MEDIA QUERY================ */
