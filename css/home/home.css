@@ -22,6 +22,7 @@
 /* 탭 바 메뉴 */
 .home-label {
     padding-bottom: 15px;
+    width: 100%;
 }
 
 .label-list a {
@@ -100,4 +101,21 @@
 .community-icon img {
     width: 25px;
     height: 25px;
+}
+
+
+/* =================MEDIA QUERY================ */
+@media screen and (max-width: 780px) {
+
+    .announce-article {
+        grid-template-columns: 1fr 7fr;
+    }
+
+    .announce-article .announce-writer {
+        display: none;
+    }
+
+    .announce-article .p-content {
+        display: none;
+    }
 }
