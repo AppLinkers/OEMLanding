@@ -34,6 +34,14 @@
     color: var(--color-black);
 }
 
+.label-buttons a {
+    display: none;
+}
+
+.label-buttons a.active {
+    display: block;
+}
+
 .label-plus {
     width: 40px;
     height: 40px;
