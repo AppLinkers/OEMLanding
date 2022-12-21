@@ -305,12 +305,12 @@ section {
     height: var(--article-img-height);
 }
 
-.article-content a {
+.article-content .p-section {
     margin-bottom: 20px;
     font-weight: 700;
 }
 
-.article-content a:hover {
+.article-content .p-section:hover {
     color: var(--color-primary);
 }
 
