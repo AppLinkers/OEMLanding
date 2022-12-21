@@ -105,6 +105,18 @@
 }
 
 
+/* =================ADMIN LOGIN================ */
+.admin-login {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: var(--color-gray);
+}
+
+.admin-login:hover {
+    text-decoration: underline;
+}
+
 
 
 /* =================MEDIA QUERY================ */
@@ -119,6 +131,10 @@
     }
 
     .announce-article .p-content {
+        display: none;
+    }
+
+    .admin-login {
         display: none;
     }
 }

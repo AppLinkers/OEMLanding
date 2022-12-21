@@ -163,7 +163,28 @@ span {
 }
 
 button {
-    background: transparent;
+    width: 100%;
+    background: var(--color-primary);
+    border-radius: var(--corner-radius);
+    padding: 15px;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.button-varient {
+    width: 100%;
+    background: var(--color-white);
+    border: 1px solid var(--color-gray20);
+    border-radius: var(--corner-radius);
+    padding: 15px;
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+button:hover {
+    opacity: 0.8;
 }
 
 input {
@@ -255,6 +276,8 @@ section {
     width: 100%;
 }
 
+
+/* div 요소 */
 .gray-box {
     background: var(--color-gray10);
     border: 1px solid var(--color-gray20);
@@ -391,6 +414,10 @@ section {
 
     h1 {
         font-size: var(--logo-size-phone);
+    }
+
+    .article-info p {
+        margin-right: 5px;
     }
 
 }

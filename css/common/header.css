@@ -36,6 +36,15 @@ menu.active {
     margin-bottom: 60px;
 }
 
+/* =================ADMIN LOGIN================ */
+.menu-admin-login {
+    color: var(--color-gray);
+}
+
+.menu-admin-login:hover {
+    text-decoration: underline;
+}
+
 /* =================MEDIA QUERY================ */
 @media screen and (max-width: 780px) {
     .logo-div {
