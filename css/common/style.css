@@ -42,6 +42,9 @@
     --article-img-height: 100px;
     --article-grid-rate: var(--article-img-width) 1fr;
     --article-grid-gap: 20px;
+
+    --admin-padding: 60px;
+    --admin-padding-phone: 20px;
 }
 
 * {
