@@ -23,6 +23,9 @@
     <!-- STYLE SHEET -->
     <link rel="stylesheet" href="../../css/common/style.css">
     <link rel="stylesheet" href="../../css/admin/admin.css">
+
+    <!-- SMART EDITOR -->
+    <script type="text/javascript" src="../../smarteditor/js/HuskyEZCreator.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -40,10 +43,31 @@
     <!-- ======== ADMIN ======== -->
     <div class="container admin__container">
 
-        <form action="#">
+        <form action="" method="post">
             <div class="admin__title flex-between">
-                <p class="p-menu">가이드 관리</p>
-                <button>발행하기</button>
+                <p class="p-menu">가이드 작성</p>
+                <button type="submit" onclick="submitContents()">발행하기</button>
+            </div>
+
+            <div class="form__title">
+                <input class="admin-input" type="text" placeholder="제목">
+            </div>
+
+            <div class="form__img">
+                <p class="p-title">대표 이미지</p>
+                <input id="selectImg" type="file" hidden>
+                <div class="form__img-container gray-stroke flex-center" onclick="defaultBtnActive()">
+                    <div class="upload-icon flex-center active">
+                        <i class="uil uil-image-upload" style="margin-right: 5px;"></i>
+                        <p class="p-etc">업로드 하기</p>
+                    </div>
+                    <img>
+                </div>
+            </div>
+
+            <div id="smarteditor">
+                <textarea name="editorTxt" id="editorTxt" cols="100" rows="10" placeholder="내용을 입력해주세요"
+                    style="width: 100%; height: 300px;"></textarea>
             </div>
         </form>
 
@@ -52,6 +76,29 @@
 
     <!-- ======== JAVASCRIPT ======== -->
     <script src="../../javascript/admin/base.js"></script>
+    <script src="../../javascript/admin/uploadImg.js"></script>
+    <script type="text/javascript">
+        var oEditors = [];
+        nhn.husky.EZCreator.createInIFrame({
+            oAppRef: oEditors,
+            elPlaceHolder: "editorTxt",
+            sSkinURI: "../../smarteditor/SmartEditor2Skin.html",
+            fCreator: "createSEditor2"
+        });
+
+        // ‘저장’ 버튼을 누르는 등 저장을 위한 액션을 했을 때 submitContents가 호출된다고 가정한다.
+        function submitContents(elClickedObj) {
+            // 에디터의 내용이 textarea에 적용된다.
+            oEditors.getById["editorTxt"].exec("UPDATE_CONTENTS_FIELD", []);
+
+            // 에디터의 내용에 대한 값 검증은 이곳에서
+            // document.getElementById("editorTxt").value를 이용해서 처리한다.
+
+            try {
+                elClickedObj.form.submit();
+            } catch (e) { }
+        }
+    </script>
 
 </body>
 

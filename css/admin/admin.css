@@ -91,6 +91,37 @@ button {
     padding: 10px;
 }
 
+#editorTxt {
+    width: 100%;
+}
+
+.form__img {
+    padding: 30px 15px;
+}
+
+.form__img-container {
+    width: 150px;
+    height: 100px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.form__img-container img {
+    display: none;
+}
+
+.form__img-container img.active {
+    display: block;
+}
+
+.upload-icon {
+    display: none;
+    color: var(--color-gray);
+}
+
+.upload-icon.active {
+    display: flex;
+}
 
 /* ===== 삭제 알림창 부분 ===== */
 .modal {

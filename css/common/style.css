@@ -202,6 +202,21 @@ input:focus {
     border: 1px solid var(--color-black);
 }
 
+.admin-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color-gray20);
+    font-size: var(--font-menu);
+    outline: none;
+    background: transparent;
+    padding: 30px 15px;
+}
+
+.admin-input:focus {
+    border: none;
+    border-bottom: 1px solid var(--color-gray20);
+}
+
 img {
     width: 100%;
     height: 100%;
