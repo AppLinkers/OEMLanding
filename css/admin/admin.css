@@ -100,10 +100,15 @@ button {
 }
 
 .form__img-container {
-    width: 150px;
-    height: 100px;
+    width: var(--article-img-width);
+    height: var(--article-img-height);
     margin-top: 15px;
     cursor: pointer;
+}
+
+.banner-img {
+    width: 100%;
+    height: var(--banner-img-height);
 }
 
 .form__img-container img {
@@ -179,6 +184,19 @@ button.modal-delete {
 
     .admin__container {
         padding: var(--admin-padding-phone);
+    }
+
+    .list__grid {
+        grid-template-columns: 1fr 100px;
+    }
+
+    .list__grid p:nth-child(2),
+    .list__grid p:nth-child(3) {
+        display: none;
+    }
+
+    .list-item .p-contnet {
+        display: none;
     }
 
 }

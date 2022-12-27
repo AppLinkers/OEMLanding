@@ -45,6 +45,8 @@
 
     --admin-padding: 60px;
     --admin-padding-phone: 20px;
+
+    --banner-img-height: 300px;
 }
 
 * {
@@ -434,8 +436,8 @@ section {
         font-size: var(--logo-size-phone);
     }
 
-    .article-info p {
-        margin-right: 5px;
+    .article-info .p-content {
+        display: none;
     }
 
 }
