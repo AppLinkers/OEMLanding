@@ -26,98 +26,109 @@
 </head>
 
 <body>
-    <!-- ======== HEADER ======== -->
-    <header id="header"></header>
-    <!-- ======== NAV ======== -->
-    <nav id="nav"></nav>
-    <style>
-        nav a:nth-child(2) {
-            color: var(--color-black);
-        }
-    </style>
-    <!-- ======== BANNER ======== -->
-    <div class="container-fit banner__container">
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
-                <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
-                <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
+    <div class="wrapper flex-between-column">
+        <div class="wrapper-inner">
+            <!-- ======== HEADER ======== -->
+            <header id="header"></header>
+            <!-- ======== NAV ======== -->
+            <nav id="nav"></nav>
+            <style>
+                nav a:nth-child(2) {
+                    color: var(--color-black);
+                }
+            </style>
+            <!-- ======== BANNER ======== -->
+            <div class="container-fit banner__container">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
+                        <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
+                        <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+
+
+            <!-- ======== ANNOUNCE DETAIL ======== -->
+            <div class="container basic__container">
+                <div class="header-label flex-between">
+                    <a class="a-section" href="../guide/guide.html">가이드</a>
+                    <div class="label-right flex-left">
+                        <i class="uil uil-estate" style="margin-right: 5px;"></i>
+                        <p>홈 > biget > 가이드</p>
+                    </div>
+                </div>
+
+                <div class="detail-title">
+                    <p class="p-menu">비트겟 이용 가이드 - 마진 거래 활용하기</p>
+                </div>
+
+                <div class="detail-label flex-between">
+                    <div class="flex-left">
+                        <p class="p-title" style="margin-right: 25px; color: var(--color-black);">비트겟 코리아</p>
+                        <i class="uil uil-eye" style="margin-right: 5px;"></i>
+                        <p>288</p>
+                    </div>
+
+                    <div class="flex-left">
+                        <i class="uil uil-clock" style="margin-right: 5px;"></i>
+                        <p>22.12.20</p>
+                    </div>
+                </div>
+
+                <div class="detail-img flex-center">
+                    <img src="../../images/guide-temp.jpg" alt="">
+                </div>
+
+                <p class="p-section">
+                    마진 거래는 수익의 극대화 뿐만 아니라 여러가지 목적을 위해 다양하게 활용할 수 있습니다. 그렇다면 무엇을 위해 어떻게 마진 거래를 활용할 수 있는지 알아보도록 하겠습니다.
+                    <br /><br />
+                    분산 투자
+                    <br /><br />
+                    마진 거래는 상대적으로 적은 자본으로도 많은 자금을 투자할 수 있기 때문에 분산 투자에 용이합니다. 분산 투자를 하게 되면 상대적으로 수익이 적을 수 있지만, 마진 거래를 통해
+                    분산 투자를
+                    함으로써 더 많은 자금을 통해 수익을 늘리는 동시에 변동성 및 하락 리스크를 줄일 수 있습니다.
+                    <br /><br /><br />
+
+
+                    공매도
+                    <br /><br />
+
+                    공매도는 마진 거래의 대표적인 활용 방법 중 하나로 영어로 숏 셀링(Short selling), 줄여서 숏(Short)이라고도 부릅니다. 하락이 예상되는 코인을 미리 빌려서 팔고
+                    나중에 실제로
+                    가격이 내려가면 낮은 가격으로 코인을 다시 매수하여 빌린 코인을 갚음으로써 차익을 남기는 방법입니다. 공매도는 단순히 코인 가격 하락에 베팅하는 방식으로도 사용할 수 있지만 리스크
+                    헷징을 위해서
+                    활용하기도합니다. 예를 들어 특정 코인을 스테이킹하여 수익을 받거나 어떤 풀에 참여하고 싶은데 가격이 하락할까봐 걱정되는 경우 해당 코인을 보유한 만큼만 공매도를 하여 나중에
+                    한꺼번에
+                    정리함으로써 가격 하락 리스크를 제거할 수 있습니다.
+                    <br /><br /><br />
+
+
+                    펀딩비
+                    <br /><br />
+                    펀딩비는 마진 거래 시장에서 현물과 선물과의 가격 격차, 매수 매도 비율의 균형을 위해서 투자자들간에 교환되는 수수료입니다. 매수 포지션을 유지하는 투자자들이 많은 경우에는 매도
+                    포지션에게 매도
+                    포지션을 유지하는 투자자들이 많은 경우에는 매수 포지션에게 펀딩비를 지불하게 됩니다. 암호화폐는 평균적으로 매수 포지션 비율이 매도 포지션 비율보다 높기 때문에 현물 보유량만큼 숏
+                    포지션을
+                    유지하면 가격 변동 리스크는 제거하면서 펀딩비를 받는 방식으로 투자를 할 수도 있습니다. 이 경우 은행에 맡겨 놓고 이자를 받는것과 비슷한 효과를 얻을 수 있습니다. 물론 은행
+                    이자보다
+                    상대적으로 더 높은 수익률을 기대할 수 있습니다.
+                    <br /><br /><br />
+
+
+                    이렇듯 마진 거래를 잘만 활용하면 가격 변동에 대한 리스크를 줄이면서 보다 현명하게 투자할 수 있습니다. 이외에 궁금하신 내용은 비트겟 사용자 가이드 혹은 트레이딩 가이드 게시글을
+                    참고해주세요.
+                </p>
+
+            </div>
         </div>
+
+        <!-- ======== FOOTER ======== -->
+        <footer id="footer"></footer>
     </div>
-
-
-    <!-- ======== ANNOUNCE DETAIL ======== -->
-    <div class="container basic__container">
-        <div class="header-label flex-between">
-            <a class="a-section" href="../guide/guide.html">가이드</a>
-            <div class="label-right flex-left">
-                <i class="uil uil-estate" style="margin-right: 5px;"></i>
-                <p>홈 > biget > 가이드</p>
-            </div>
-        </div>
-
-        <div class="detail-title">
-            <p class="p-menu">비트겟 이용 가이드 - 마진 거래 활용하기</p>
-        </div>
-
-        <div class="detail-label flex-between">
-            <div class="flex-left">
-                <p class="p-title" style="margin-right: 25px; color: var(--color-black);">비트겟 코리아</p>
-                <i class="uil uil-eye" style="margin-right: 5px;"></i>
-                <p>288</p>
-            </div>
-
-            <div class="flex-left">
-                <i class="uil uil-clock" style="margin-right: 5px;"></i>
-                <p>22.12.20</p>
-            </div>
-        </div>
-
-        <div class="detail-img flex-center">
-            <img src="../../images/guide-temp.jpg" alt="">
-        </div>
-
-        <p class="p-section">
-            마진 거래는 수익의 극대화 뿐만 아니라 여러가지 목적을 위해 다양하게 활용할 수 있습니다. 그렇다면 무엇을 위해 어떻게 마진 거래를 활용할 수 있는지 알아보도록 하겠습니다.
-            <br /><br />
-            분산 투자
-            <br /><br />
-            마진 거래는 상대적으로 적은 자본으로도 많은 자금을 투자할 수 있기 때문에 분산 투자에 용이합니다. 분산 투자를 하게 되면 상대적으로 수익이 적을 수 있지만, 마진 거래를 통해 분산 투자를
-            함으로써 더 많은 자금을 통해 수익을 늘리는 동시에 변동성 및 하락 리스크를 줄일 수 있습니다.
-            <br /><br /><br />
-
-
-            공매도
-            <br /><br />
-
-            공매도는 마진 거래의 대표적인 활용 방법 중 하나로 영어로 숏 셀링(Short selling), 줄여서 숏(Short)이라고도 부릅니다. 하락이 예상되는 코인을 미리 빌려서 팔고 나중에 실제로
-            가격이 내려가면 낮은 가격으로 코인을 다시 매수하여 빌린 코인을 갚음으로써 차익을 남기는 방법입니다. 공매도는 단순히 코인 가격 하락에 베팅하는 방식으로도 사용할 수 있지만 리스크 헷징을 위해서
-            활용하기도합니다. 예를 들어 특정 코인을 스테이킹하여 수익을 받거나 어떤 풀에 참여하고 싶은데 가격이 하락할까봐 걱정되는 경우 해당 코인을 보유한 만큼만 공매도를 하여 나중에 한꺼번에
-            정리함으로써 가격 하락 리스크를 제거할 수 있습니다.
-            <br /><br /><br />
-
-
-            펀딩비
-            <br /><br />
-            펀딩비는 마진 거래 시장에서 현물과 선물과의 가격 격차, 매수 매도 비율의 균형을 위해서 투자자들간에 교환되는 수수료입니다. 매수 포지션을 유지하는 투자자들이 많은 경우에는 매도 포지션에게 매도
-            포지션을 유지하는 투자자들이 많은 경우에는 매수 포지션에게 펀딩비를 지불하게 됩니다. 암호화폐는 평균적으로 매수 포지션 비율이 매도 포지션 비율보다 높기 때문에 현물 보유량만큼 숏 포지션을
-            유지하면 가격 변동 리스크는 제거하면서 펀딩비를 받는 방식으로 투자를 할 수도 있습니다. 이 경우 은행에 맡겨 놓고 이자를 받는것과 비슷한 효과를 얻을 수 있습니다. 물론 은행 이자보다
-            상대적으로 더 높은 수익률을 기대할 수 있습니다.
-            <br /><br /><br />
-
-
-            이렇듯 마진 거래를 잘만 활용하면 가격 변동에 대한 리스크를 줄이면서 보다 현명하게 투자할 수 있습니다. 이외에 궁금하신 내용은 비트겟 사용자 가이드 혹은 트레이딩 가이드 게시글을 참고해주세요.
-        </p>
-
-    </div>
-
-    <!-- ======== FOOTER ======== -->
-    <footer id="footer"></footer>
-
 
 
     <!-- ======== JAVASCRIPT ======== -->

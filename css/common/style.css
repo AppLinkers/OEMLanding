@@ -43,6 +43,8 @@
     --article-grid-rate: var(--article-img-width) 1fr;
     --article-grid-gap: 20px;
 
+    --copytrading-grid-rate: 3fr 1fr;
+
     --admin-padding: 60px;
     --admin-padding-phone: 20px;
 
@@ -151,6 +153,10 @@ span {
 
 /* =================WIDGET CSS================ */
 
+.wrapper {
+    height: 100vh;
+}
+
 .container {
     width: var(--container-width);
     max-width: var(--container-width);
@@ -254,6 +260,12 @@ section {
 .flex-between {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.flex-between-column {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -390,6 +402,30 @@ section {
 .detail-img {
     padding: 30px 0;
 }
+
+
+/* copytrading 아티클 */
+.copytrading-label {
+    height: 30px;
+    margin-top: 15px;
+    color: var(--color-gray);
+}
+
+.copytrading-grid {
+    display: grid;
+    grid-template-columns: var(--copytrading-grid-rate);
+    align-items: center;
+}
+
+.copytrading-grid p {
+    padding-left: 15px;
+}
+
+.copytrading-article {
+    padding: var(--article-padding) 0;
+}
+
+
 
 /*  커뮤니티 */
 .community-section {

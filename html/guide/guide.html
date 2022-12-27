@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -26,70 +26,79 @@
 </head>
 
 <body>
-    <!-- ======== HEADER ======== -->
-    <header id="header"></header>
-    <!-- ======== NAV ======== -->
-    <nav id="nav"></nav>
-    <style>
-        nav a:nth-child(2) {
-            color: var(--color-black);
-        }
-    </style>
-    <!-- ======== BANNER ======== -->
-    <div class="container-fit banner__container">
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
-                <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
-                <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </div>
-
-    <!-- ======== GUIDE ======== -->
-    <div class="container basic__container">
-
-        <div class="header-label flex-between">
-            <a class="a-section" href="../guide/guide.html">가이드</a>
-            <div class="label-right flex-left">
-                <i class="uil uil-estate" style="margin-right: 5px;"></i>
-                <p>홈 > biget > 가이드</p>
-            </div>
-        </div>
-
-        <div class="article-list">
-
-            <article class="article-form" th:each="">
-                <a href="../guide/guide_detail.html">
-                    <div class="article-inner">
-
-                        <div class="article-img">
-                            <img src="../../images/guide-temp.jpg">
-                        </div>
-
-                        <div class="article-content">
-                            <p class="p-section ellipsis-line-one">비트겟 이용 가이드 - 마진 거래 활용하기</p>
-                            <div class="article-info flex-left">
-                                <p style="font-weight: 300;">비트겟 코리아</p>
-                                <p class="p-content" style="color: var(--color-gray20);">|</p>
-                                <p class="p-content" style="color: var(--color-primary);">288</p>
-                                <p class="p-content" style="color: var(--color-gray20);">|</p>
-                                <p class="p-content" style="color: var(--color-gray); font-weight: 300;">2022.12.20</p>
-                            </div>
-                        </div>
+    <div class="wrapper flex-between-column">
+        <div class="wrapper-inner">
+            <!-- ======== HEADER ======== -->
+            <header id="header"></header>
+            <!-- ======== NAV ======== -->
+            <nav id="nav"></nav>
+            <style>
+                nav a:nth-child(2) {
+                    color: var(--color-black);
+                }
+            </style>
+            <!-- ======== BANNER ======== -->
+            <div class="container-fit banner__container">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
+                        <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
+                        <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
                     </div>
-                </a>
-            </article>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <!-- ======== GUIDE ======== -->
+            <div class="container basic__container">
+
+                <div class="header-label flex-between">
+                    <a class="a-section" href="../guide/guide.html">가이드</a>
+                    <div class="label-right flex-left">
+                        <i class="uil uil-estate" style="margin-right: 5px;"></i>
+                        <p>홈 > biget > 가이드</p>
+                    </div>
+                </div>
+
+                <div class="article-list">
+
+                    <article class="article-form" th:each="">
+                        <a href="../guide/guide_detail.html">
+                            <div class="article-inner">
+
+                                <div class="article-img">
+                                    <img src="../../images/guide-temp.jpg">
+                                </div>
+
+                                <div class="article-content">
+                                    <p class="p-section ellipsis-line-one">비트겟 이용 가이드 - 마진 거래 활용하기</p>
+                                    <div class="article-info flex-left">
+                                        <p style="font-weight: 300;">비트겟 코리아</p>
+                                        <p class="p-content" style="color: var(--color-gray20);">|</p>
+                                        <p class="p-content" style="color: var(--color-primary);">288</p>
+                                        <p class="p-content" style="color: var(--color-gray20);">|</p>
+                                        <p class="p-content" style="color: var(--color-gray); font-weight: 300;">
+                                            2022.12.20</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
 
         </div>
 
+        <!-- ======== FOOTER ======== -->
+        <footer id="footer"></footer>
     </div>
 
-    <!-- ======== FOOTER ======== -->
-    <footer id="footer"></footer>
+
+
 
 
 

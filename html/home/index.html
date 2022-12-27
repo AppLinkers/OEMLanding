@@ -27,246 +27,261 @@
 </head>
 
 <body>
-    <!-- ======== HEADER ======== -->
-    <header id="header"></header>
-    <!-- ======== NAV ======== -->
-    <nav id="nav"></nav>
-    <!-- ======== PRICE ======== -->
-    <div class="container-fit price__container">
-        <img src="../../images/headerimg.JPG">
-    </div>
 
-    <!-- ======== BANNER ======== -->
-    <div class="container-fit banner__container">
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
-                <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
-                <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
+    <div class="wrapper flex-between-column">
+        <div class="wrapper-inner">
+            <!-- ======== HEADER ======== -->
+            <header id="header"></header>
+            <!-- ======== NAV ======== -->
+            <nav id="nav"></nav>
+            <!-- ======== PRICE ======== -->
+            <div class="container-fit price__container">
+                <img src="../../images/headerimg.JPG">
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </div>
 
-    <!-- ======== BODY_IMG ======== -->
-    <div class="container-fit bodyimg__container">
-        <img src="../../images/bodyimg.JPG">
-    </div>
-
-    <!-- ======== HOME ======== -->
-    <div class="container basic__container grid-div">
-
-        <div class="grid-left">
-
-            <div class="home-label flex-between">
-                <div class="label-list">
-                    <a class="a-label active">공지사항</a>
-                    <a class="a-label">가이드</a>
+            <!-- ======== BANNER ======== -->
+            <div class="container-fit banner__container">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
+                        <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
+                        <div class="swiper-slide flex-center">크기 1160 x 300 (세로 크기 변경가능)</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
+            </div>
 
-                <div class="label-buttons">
-                    <!-- 공지사항으로 -->
-                    <a class="active" href="../announce/announce.html">
-                        <div class="label-plus gray-stroke flex-center">
-                            <i class="uil uil-plus"></i>
+            <!-- ======== BODY_IMG ======== -->
+            <div class="container-fit bodyimg__container">
+                <img src="../../images/bodyimg.JPG">
+            </div>
+
+            <!-- ======== HOME ======== -->
+            <div class="container basic__container grid-div">
+
+                <div class="grid-left">
+
+                    <div class="home-label flex-between">
+                        <div class="label-list">
+                            <a class="a-label active">공지사항</a>
+                            <a class="a-label">가이드</a>
                         </div>
-                    </a>
-                    <!-- 가이드로 -->
-                    <a href="../guide/guide.html">
-                        <div class="label-plus gray-stroke flex-center">
-                            <i class="uil uil-plus"></i>
+
+                        <div class="label-buttons">
+                            <!-- 공지사항으로 -->
+                            <a class="active" href="../announce/announce.html">
+                                <div class="label-plus gray-stroke flex-center">
+                                    <i class="uil uil-plus"></i>
+                                </div>
+                            </a>
+                            <!-- 가이드로 -->
+                            <a href="../guide/guide.html">
+                                <div class="label-plus gray-stroke flex-center">
+                                    <i class="uil uil-plus"></i>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+
+                    </div>
+
+                    <div class="home-divs">
+
+                        <!-- ======== 공지사항 탭 ======= -->
+                        <div class="home-target-div active">
+
+                            <article class="announce-article" th:each="">
+                                <p class="p-title">공지사항</p>
+                                <a class="a-title ellipsis-line-one" href="">
+                                    Bitget의 첫 '킹스컵' 글로벌 트레이딩 대회(KCGI) 곧 개막합니다!
+                                </a>
+                                <p class="announce-writer">작성자</p>
+                                <p class="p-content">2022-12-08</p>
+                            </article>
+
+                            <article class="announce-article">
+                                <p class="p-title">공지사항</p>
+                                <a class="a-title ellipsis-line-one">
+                                    BFT 카니발, BFT 입금하고 거래하여 2,200,000 BFT 및 1,600 USDT 획득
+                                </a>
+                                <p class="announce-writer">작성자</p>
+                                <p class="p-content">2022-12-08</p>
+                            </article>
+
+                            <article class="announce-article">
+                                <p class="p-title">공지사항</p>
+                                <a class="a-title ellipsis-line-one">
+                                    Bitget 신규코인 상장: AAVE
+                                </a>
+                                <p class="announce-writer">작성자</p>
+                                <p class="p-content">2022-12-08</p>
+                            </article>
+
+                            <article class="announce-article">
+                                <p class="p-title">공지사항</p>
+                                <a class="a-title ellipsis-line-one">
+                                    Bitget의 첫 '킹스컵' 글로벌 트레이딩 대회(KCGI) 곧 개막합니다!
+                                </a>
+                                <p class="announce-writer">작성자</p>
+                                <p class="p-content">2022-12-08</p>
+                            </article>
+
+                            <article class="announce-article">
+                                <p class="p-title">공지사항</p>
+                                <a class="a-title ellipsis-line-one">
+
+                                    BFT 카니발, BFT 입금하고 거래하여 2,200,000 BFT 및 1,600 USDT 획득
+                                </a>
+                                <p class="announce-writer">작성자</p>
+                                <p class="p-content">2022-12-08</p>
+                            </article>
+
+                            <article class="announce-article">
+                                <p class="p-title">공지사항</p>
+                                <a class="a-title ellipsis-line-one">
+                                    Bitget 신규코인 상장: AAVE
+                                </a>
+                                <p class="announce-writer">작성자</p>
+                                <p class="p-content">2022-12-08</p>
+                            </article>
+
+                        </div>
+
+                        <!-- ======== 가이드 탭 ======= -->
+                        <div class="home-target-div">
+
+                            <article class="article-form" th:each="">
+                                <a href="#">
+                                    <div class="article-inner">
+
+                                        <div class="article-img">
+                                            <img src="../../images/guide-temp.jpg">
+                                        </div>
+
+                                        <div class="guide-content flex-column">
+                                            <a class="a-section ellipsis-line-one">
+                                                비트겟 이용 가이드 - 마진 거래 활용하기
+                                            </a>
+                                            <a class="a-basic ellipsis-line-three">
+                                                마진 거래는 수익의 극대화 뿐만 아니라 여러가지 목적을 위해 다양하게 활용할 수 있습니다. 그렇다면 무엇을 위해 어떻게 마진
+                                                거래를 활용할 수
+                                                있는지
+                                                알아보도록 하겠습니다. 분산 투자 마진 거래는 상대적으로 적은 자본으로도 많은 자금을 투자할 수 있기 때문에 분산 투자에
+                                                용이합니다. 마진
+                                                거래는
+                                                수익의 극대화 뿐만 아니라 여러가지 목적을 위해 다양하게 활용할 수 있습니다.
+                                            </a>
+                                            <div class="guide-info flex-left">
+                                                <p>비트겟 코리아</p>
+                                                <p class="p-etc" style="color: var(--color-primary);">288</p>
+                                                <p class="p-etc" style="color: var(--color-gray);">2022.12.20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article class="article-form" th:each="">
+                                <a href="#">
+                                    <div class="article-inner">
+
+                                        <div class="article-img">
+                                            <img src="../../images/guide-temp.jpg">
+                                        </div>
+
+                                        <div class="guide-content flex-column">
+                                            <a class="a-section ellipsis-line-one">
+                                                비트겟 이용 가이드 - 마진 거래 활용하기
+                                            </a>
+                                            <a class="a-basic ellipsis-line-three">
+                                                마진 거래는 수익의 극대화 뿐만 아니라 여러가지 목적을 위해 다양하게 활용할 수 있습니다. 그렇다면 무엇을 위해 어떻게 마진
+                                                거래를 활용할 수
+                                                있는지
+                                                알아보도록 하겠습니다. 분산 투자 마진 거래는 상대적으로 적은 자본으로도 많은 자금을 투자할 수 있기 때문에 분산 투자에
+                                                용이합니다. 마진
+                                                거래는
+                                                수익의 극대화 뿐만 아니라 여러가지 목적을 위해 다양하게 활용할 수 있습니다.
+                                            </a>
+                                            <div class="guide-info flex-left">
+                                                <p>비트겟 코리아</p>
+                                                <p class="p-etc" style="color: var(--color-primary);">288</p>
+                                                <p class="p-etc" style="color: var(--color-gray);">2022.12.20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article class="article-form" th:each="">
+                                <a href="#">
+                                    <div class="article-inner">
+
+                                        <div class="article-img">
+                                            <img src="../../images/guide-temp.jpg">
+                                        </div>
+
+                                        <div class="guide-content flex-column">
+                                            <a class="a-section ellipsis-line-one">
+                                                비트겟 이용 가이드 - 마진 거래 활용하기
+                                            </a>
+                                            <a class="a-basic ellipsis-line-three">
+                                                마진 거래는 수익의 극대화 뿐만 아니라 여러가지 목적을 위해 다양하게 활용할 수 있습니다. 그렇다면 무엇을 위해 어떻게 마진
+                                                거래를 활용할 수
+                                                있는지
+                                                알아보도록 하겠습니다. 분산 투자 마진 거래는 상대적으로 적은 자본으로도 많은 자금을 투자할 수 있기 때문에 분산 투자에
+                                                용이합니다. 마진
+                                                거래는
+                                                수익의 극대화 뿐만 아니라 여러가지 목적을 위해 다양하게 활용할 수 있습니다.
+                                            </a>
+                                            <div class="guide-info flex-left">
+                                                <p>비트겟 코리아</p>
+                                                <p class="p-etc" style="color: var(--color-primary);">288</p>
+                                                <p class="p-etc" style="color: var(--color-gray);">2022.12.20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+
+                        </div>
+                    </div>
+
                 </div>
 
+                <div class="grid-right">
+
+                    <div class="community-section gray-stroke">
+                        <p class="p-label">커뮤니티</p>
+
+                        <div class="community-icons flex-left">
+                            <a href="#">
+                                <img src="../../images/telegram.png" style="margin-right: 15px;">
+                            </a>
+                            <a href="#">
+                                <img src="../../images/kakao.png" style="margin-right: 15px;">
+                            </a>
+                            <a href="#">
+                                <div class="community-icon flex-center" style="background: var(--color-discord);">
+                                    <img src="../../images/discord.png">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="home-divs">
-
-                <!-- ======== 공지사항 탭 ======= -->
-                <div class="home-target-div active">
-
-                    <article class="announce-article" th:each="">
-                        <p class="p-title">공지사항</p>
-                        <a class="a-title ellipsis-line-one" href="">
-                            Bitget의 첫 '킹스컵' 글로벌 트레이딩 대회(KCGI) 곧 개막합니다!
-                        </a>
-                        <p class="announce-writer">작성자</p>
-                        <p class="p-content">2022-12-08</p>
-                    </article>
-
-                    <article class="announce-article">
-                        <p class="p-title">공지사항</p>
-                        <a class="a-title ellipsis-line-one">
-                            BFT 카니발, BFT 입금하고 거래하여 2,200,000 BFT 및 1,600 USDT 획득
-                        </a>
-                        <p class="announce-writer">작성자</p>
-                        <p class="p-content">2022-12-08</p>
-                    </article>
-
-                    <article class="announce-article">
-                        <p class="p-title">공지사항</p>
-                        <a class="a-title ellipsis-line-one">
-                            Bitget 신규코인 상장: AAVE
-                        </a>
-                        <p class="announce-writer">작성자</p>
-                        <p class="p-content">2022-12-08</p>
-                    </article>
-
-                    <article class="announce-article">
-                        <p class="p-title">공지사항</p>
-                        <a class="a-title ellipsis-line-one">
-                            Bitget의 첫 '킹스컵' 글로벌 트레이딩 대회(KCGI) 곧 개막합니다!
-                        </a>
-                        <p class="announce-writer">작성자</p>
-                        <p class="p-content">2022-12-08</p>
-                    </article>
-
-                    <article class="announce-article">
-                        <p class="p-title">공지사항</p>
-                        <a class="a-title ellipsis-line-one">
-
-                            BFT 카니발, BFT 입금하고 거래하여 2,200,000 BFT 및 1,600 USDT 획득
-                        </a>
-                        <p class="announce-writer">작성자</p>
-                        <p class="p-content">2022-12-08</p>
-                    </article>
-
-                    <article class="announce-article">
-                        <p class="p-title">공지사항</p>
-                        <a class="a-title ellipsis-line-one">
-                            Bitget 신규코인 상장: AAVE
-                        </a>
-                        <p class="announce-writer">작성자</p>
-                        <p class="p-content">2022-12-08</p>
-                    </article>
-
-                </div>
-
-                <!-- ======== 가이드 탭 ======= -->
-                <div class="home-target-div">
-
-                    <article class="article-form" th:each="">
-                        <a href="#">
-                            <div class="article-inner">
-
-                                <div class="article-img">
-                                    <img src="../../images/guide-temp.jpg">
-                                </div>
-
-                                <div class="guide-content flex-column">
-                                    <a class="a-section ellipsis-line-one">
-                                        비트겟 이용 가이드 - 마진 거래 활용하기
-                                    </a>
-                                    <a class="a-basic ellipsis-line-three">
-                                        마진 거래는 수익의 극대화 뿐만 아니라 여러가지 목적을 위해 다양하게 활용할 수 있습니다. 그렇다면 무엇을 위해 어떻게 마진 거래를 활용할 수
-                                        있는지
-                                        알아보도록 하겠습니다. 분산 투자 마진 거래는 상대적으로 적은 자본으로도 많은 자금을 투자할 수 있기 때문에 분산 투자에 용이합니다. 마진
-                                        거래는
-                                        수익의 극대화 뿐만 아니라 여러가지 목적을 위해 다양하게 활용할 수 있습니다.
-                                    </a>
-                                    <div class="guide-info flex-left">
-                                        <p>비트겟 코리아</p>
-                                        <p class="p-etc" style="color: var(--color-primary);">288</p>
-                                        <p class="p-etc" style="color: var(--color-gray);">2022.12.20</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="article-form" th:each="">
-                        <a href="#">
-                            <div class="article-inner">
-
-                                <div class="article-img">
-                                    <img src="../../images/guide-temp.jpg">
-                                </div>
-
-                                <div class="guide-content flex-column">
-                                    <a class="a-section ellipsis-line-one">
-                                        비트겟 이용 가이드 - 마진 거래 활용하기
-                                    </a>
-                                    <a class="a-basic ellipsis-line-three">
-                                        마진 거래는 수익의 극대화 뿐만 아니라 여러가지 목적을 위해 다양하게 활용할 수 있습니다. 그렇다면 무엇을 위해 어떻게 마진 거래를 활용할 수
-                                        있는지
-                                        알아보도록 하겠습니다. 분산 투자 마진 거래는 상대적으로 적은 자본으로도 많은 자금을 투자할 수 있기 때문에 분산 투자에 용이합니다. 마진
-                                        거래는
-                                        수익의 극대화 뿐만 아니라 여러가지 목적을 위해 다양하게 활용할 수 있습니다.
-                                    </a>
-                                    <div class="guide-info flex-left">
-                                        <p>비트겟 코리아</p>
-                                        <p class="p-etc" style="color: var(--color-primary);">288</p>
-                                        <p class="p-etc" style="color: var(--color-gray);">2022.12.20</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="article-form" th:each="">
-                        <a href="#">
-                            <div class="article-inner">
-
-                                <div class="article-img">
-                                    <img src="../../images/guide-temp.jpg">
-                                </div>
-
-                                <div class="guide-content flex-column">
-                                    <a class="a-section ellipsis-line-one">
-                                        비트겟 이용 가이드 - 마진 거래 활용하기
-                                    </a>
-                                    <a class="a-basic ellipsis-line-three">
-                                        마진 거래는 수익의 극대화 뿐만 아니라 여러가지 목적을 위해 다양하게 활용할 수 있습니다. 그렇다면 무엇을 위해 어떻게 마진 거래를 활용할 수
-                                        있는지
-                                        알아보도록 하겠습니다. 분산 투자 마진 거래는 상대적으로 적은 자본으로도 많은 자금을 투자할 수 있기 때문에 분산 투자에 용이합니다. 마진
-                                        거래는
-                                        수익의 극대화 뿐만 아니라 여러가지 목적을 위해 다양하게 활용할 수 있습니다.
-                                    </a>
-                                    <div class="guide-info flex-left">
-                                        <p>비트겟 코리아</p>
-                                        <p class="p-etc" style="color: var(--color-primary);">288</p>
-                                        <p class="p-etc" style="color: var(--color-gray);">2022.12.20</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-
-                </div>
-            </div>
-
         </div>
 
-        <div class="grid-right">
-
-            <div class="community-section gray-stroke">
-                <p class="p-label">커뮤니티</p>
-
-                <div class="community-icons flex-left">
-                    <a href="#">
-                        <img src="../../images/telegram.png" style="margin-right: 15px;">
-                    </a>
-                    <a href="#">
-                        <img src="../../images/kakao.png" style="margin-right: 15px;">
-                    </a>
-                    <a href="#">
-                        <div class="community-icon flex-center" style="background: var(--color-discord);">
-                            <img src="../../images/discord.png">
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <!-- ======== FOOTER ======== -->
+        <footer id="footer"></footer>
     </div>
+
+
 
     <!-- ======== ADMIN LOGIN ======== -->
     <a class="admin-login a-content" href="../common/login.html">관리자 로그인</a>
 
-    <!-- ======== FOOTER ======== -->
-    <footer id="footer"></footer>
+
 
     <!-- ======== JAVASCRIPT ======== -->
     <script src="../../javascript/common/base.js"></script>
