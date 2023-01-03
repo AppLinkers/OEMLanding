@@ -4,9 +4,14 @@
     padding: 0 20px;
 }
 
-.header__container a {
+.header__container .a-section {
     color: var(--color-white);
     font-weight: 300;
+}
+
+.change-password-button {
+    color: var(--color-white);
+    margin-right: 15px;
 }
 
 .logout-button {

@@ -146,6 +146,10 @@ a {
     font-size: var(--font-content);
 }
 
+.a-etc {
+    font-size: var(--font-etc);
+}
+
 span {
     font-size: var(--font-basic);
 }
